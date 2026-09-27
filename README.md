@@ -26,29 +26,14 @@ engineering problems.
 - Diffusion Models
 - Python
 
-### 1. Phase-Locked Loop Design using Cadence Virtuoso
+###1. Phase-Locked Loop (PLL) Design
 
-Designed and simulated an Integer-N Phase-Locked Loop using UMC 180 nm
-CMOS technology and Cadence Virtuoso. The PLL integrates a Phase
-Frequency Detector, Charge Pump, Passive Loop Filter, Current-Starved
-Ring VCO, and Divide-by-64 Frequency Divider to generate approximately
-1.024 GHz from a 16 MHz reference clock. The project involved
-transistor-level circuit design, block-level simulation, integration,
-and performance analysis.
+Designed and simulated a 16 MHz–1024 MHz Integer-N Phase-Locked Loop using UMC 180 nm CMOS technology in Cadence Virtuoso. The PLL consists of a Phase Frequency Detector, Charge Pump, passive second-order loop filter, current-starved ring VCO, and divide-by-64 frequency divider. The complete transistor-level design was integrated and simulated to generate an output frequency of approximately 1.02465 GHz, demonstrating frequency multiplication and closed-loop synchronization.
 
-### 2. Temperature-Controlled Stepper Motor System
+###2. Temperature-Controlled Stepper Motor System
 
-Developed an embedded temperature-based control system using the ARM7
-LPC2148 microcontroller, LM35 temperature sensor, ADC, and stepper motor.
-The system continuously monitors temperature and automatically controls
-the stepper motor according to a predefined threshold, demonstrating
-real-time sensor interfacing, ADC-based data acquisition, and embedded
-motor control.
+Developed an automated temperature-based cooling system using the ARM7 LPC2148 microcontroller, LM35 temperature sensor, ADC, and stepper motor with Embedded C in Keil µVision. The system continuously monitors ambient temperature through the LM35, processes the sensor data using the LPC2148 ADC, and compares it with a predefined threshold. Based on the temperature condition, the controller automatically operates the stepper motor to regulate the cooling mechanism.
 
-### 3. Text-to-Video Generation using Generative AI
+###3. Text-to-Video Generation using Generative AI
 
-Developed a Generative AI pipeline for converting textual descriptions
-into video sequences using the DAMO Text-to-Video MS-1.7B architecture.
-The project incorporates text encoding, a 3D denoising UNet, LoRA-based
-fine-tuning, and the DPMSolverMultistep scheduler to generate coherent
-video content while addressing spatial and temporal consistency.
+Developed a Generative AI-based text-to-video system that converts natural language prompts into coherent video sequences using the DAMO Text-to-Video MS-1.7B model. The system incorporates T5/CLIP text encoding, 3D denoising UNet, cross-attention, VAE-based latent representations, DPMSolverMultistep noise scheduling, and LoRA fine-tuning. The project demonstrated prompt-based video generation with spatial and temporal consistency while using LoRA for efficient adaptation to specific visual styles.
