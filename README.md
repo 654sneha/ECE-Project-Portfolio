@@ -1,4 +1,4 @@
-# ECE Project Portfolio
+# Sneha_Navalagund_Projects
 
 This repository showcases three academic and technical projects developed
 as part of my Electronics and Communication Engineering studies. The
